@@ -15,6 +15,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 public class CarInventoryControllerTest {
@@ -38,6 +39,13 @@ public class CarInventoryControllerTest {
 
     @Test
     public void testFindCar() {
+        when(car.getCarName()).thenReturn("prius");
+        ResponseEntity<Map<String, String>> responseEntity = carInventoryController.findCar("prius");
+        assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
+    }
+
+    @Test
+    public void testFindCarError() {
         ResponseEntity<Map<String, String>> responseEntity = carInventoryController.findCar("prius");
         assertEquals(HttpStatus.BAD_REQUEST, responseEntity.getStatusCode());
     }

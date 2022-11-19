@@ -1,9 +1,7 @@
 package com.example.deliassignment.service;
 
 import com.example.deliassignment.entity.Car;
-import org.springframework.stereotype.Service;
 
-@Service
 public class AccelerateCar {
 
     public AccelerateCar() {

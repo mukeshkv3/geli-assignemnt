@@ -8,6 +8,7 @@ class GeliAssignmentApplicationTests {
 
     @Test
     void contextLoads() {
+        GeliAssignmentApplication.main(new String[]{});
     }
 
 }
