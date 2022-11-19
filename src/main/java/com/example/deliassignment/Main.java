@@ -1,11 +1,12 @@
-package com.example.deliassignment.parkinglot;
+package com.example.deliassignment;
 
 import com.example.deliassignment.entity.Car;
 import com.example.deliassignment.entity.Convertible;
 import com.example.deliassignment.exception.CustomException;
+import com.example.deliassignment.parkinglot.Parking;
 import com.example.deliassignment.service.AccelerateCar;
 
-public class ParkCar {
+public class Main {
 
     public static void main(String[] args) throws CustomException {
 

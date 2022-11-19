@@ -9,6 +9,8 @@ public class Car {
     private Engine engine;
     private boolean convertible;
 
+    private Car(){}
+
     public Car(String carName, int noOfSeats, String speed, String productionNumber,String horsePower, String milesPerGallon, boolean convertible) {
         this.carName = carName;
         this.noOfSeats = noOfSeats;
